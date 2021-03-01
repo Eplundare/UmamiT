@@ -1,0 +1,582 @@
+fileFormatVersion: 2
+guid: ecc2672ed84ba62458d3b34bd57c8225
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6773675172305736758
+    second: ICR_circle
+  - first:
+      213: 8321351719909028316
+    second: ICR_squareUni
+  - first:
+      213: -2498514693032291348
+    second: ICR_progressBall
+  - first:
+      213: -8765733657310851913
+    second: ICR_Play
+  - first:
+      213: 5246596704033510031
+    second: ICR_Pause
+  - first:
+      213: -6207097357749358127
+    second: ICR_fruitStroke
+  - first:
+      213: 8048318286481124619
+    second: ICR_fruitGreen
+  - first:
+      213: -3606326702668616835
+    second: ICR_fruitWhite
+  - first:
+      213: -854566990762675502
+    second: ICR_cream
+  - first:
+      213: 6829752621937721791
+    second: ICR_fruit
+  - first:
+      213: -338650366311236402
+    second: ICR_Panel
+  - first:
+      213: 5453790148394343053
+    second: ICR_PanelBorder
+  - first:
+      213: 55549550955648361
+    second: ICR_PanelRoundSquare
+  - first:
+      213: 7882085223576991313
+    second: ICR_hintHand
+  - first:
+      213: -4779736971782341937
+    second: ICR_hintArrowOne
+  - first:
+      213: -3812886443316282892
+    second: ICR_Spritesheet_Spritesheet1_17
+  - first:
+      213: 1510235898043580010
+    second: ICR_Spritesheet_Spritesheet1_18
+  - first:
+      213: 5560437078588761559
+    second: ICR_Spritesheet_Spritesheet1_19
+  - first:
+      213: -2056526605732653483
+    second: ICR_Spritesheet_Spritesheet1_20
+  - first:
+      213: 1142344313137699809
+    second: ICR_Spritesheet_Spritesheet1_21
+  - first:
+      213: -4916905185343602282
+    second: ICR_squareSharpRound
+  - first:
+      213: 4457520037848146489
+    second: ICR_hintArrowTwo
+  - first:
+      213: -368835515319563813
+    second: ICR_Spritesheet_Spritesheet1_24
+  - first:
+      213: -2147022501376085928
+    second: ICR_Spritesheet_Spritesheet1_25
+  - first:
+      213: 7588929114272836810
+    second: ICR_Spritesheet_Spritesheet1_26
+  - first:
+      213: 2154984339092431083
+    second: ICR_Spritesheet_Spritesheet1_27
+  - first:
+      213: 5804613804315624013
+    second: ICR_Spritesheet_Spritesheet1_28
+  - first:
+      213: 3116275138527254953
+    second: ICR_Spritesheet_Spritesheet1_29
+  - first:
+      213: -8120498118181856131
+    second: ICR_Spritesheet_Spritesheet1_30
+  - first:
+      213: 5912448164764294417
+    second: ICR_Spritesheet_Spritesheet1_31
+  - first:
+      213: -4563941015699050110
+    second: ICR_alexis
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 47
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ICR_circle
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1795
+        width: 321
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6349a254eade00e50800000000000000
+      internalID: 6773675172305736758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_squareUni
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1792
+        width: 325
+        height: 325
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd173440d416b7370800000000000000
+      internalID: 8321351719909028316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_progressBall
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 1792
+        width: 321
+        height: 321
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce357b7df1e735dd0800000000000000
+      internalID: -2498514693032291348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_Play
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1805
+        width: 230
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bc0d487eabd95680800000000000000
+      internalID: -8765733657310851913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_Pause
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 1801
+        width: 216
+        height: 304
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8217a797e7afc840800000000000000
+      internalID: 5246596704033510031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_fruitStroke
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 1734
+        width: 325
+        height: 392
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d17519f6d5fbd9a0800000000000000
+      internalID: -6207097357749358127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_fruitWhite
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 1392
+        width: 263
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b6e6798f0c3fdc0800000000000000
+      internalID: -3606326702668616835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_cream
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 1092
+        width: 876
+        height: 609
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d2f0de79d7f324f0800000000000000
+      internalID: -854566990762675502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_fruit
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1392
+        width: 263
+        height: 329
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb10466f2d728ce50800000000000000
+      internalID: 6829752621937721791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_Panel
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 979
+        width: 325
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc76fc394fdc4bf0800000000000000
+      internalID: -338650366311236402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_PanelBorder
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 979
+        width: 325
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ad19a9e31cfab40800000000000000
+      internalID: 5453790148394343053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_PanelRoundSquare
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 979
+        width: 321
+        height: 326
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965d424b50a55c000800000000000000
+      internalID: 55549550955648361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_hintHand
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 492
+        width: 437
+        height: 417
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15679a0ffbac26d60800000000000000
+      internalID: 7882085223576991313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_hintArrowOne
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 504
+        width: 821
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcabc1d5c86faadb0800000000000000
+      internalID: -4779736971782341937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_squareSharpRound
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 279
+        width: 175
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6918159e8c4a3cbb0800000000000000
+      internalID: -4916905185343602282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_hintArrowTwo
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 21
+        width: 1034
+        height: 429
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932ef138bda4cdd30800000000000000
+      internalID: 4457520037848146489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_alexis
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 17
+        width: 687
+        height: 317
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2813c67b3df99a0c0800000000000000
+      internalID: -4563941015699050110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c8bbf273da57a644591df0273b86da5e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
