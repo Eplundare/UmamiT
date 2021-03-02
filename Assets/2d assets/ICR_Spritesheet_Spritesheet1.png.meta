@@ -22,7 +22,7 @@ TextureImporter:
     second: ICR_fruitStroke
   - first:
       213: 8048318286481124619
-    second: ICR_fruitGreen
+    second: ICR_logo_white
   - first:
       213: -3606326702668616835
     second: ICR_fruitWhite
@@ -95,6 +95,9 @@ TextureImporter:
   - first:
       213: -4563941015699050110
     second: ICR_alexis
+  - first:
+      213: 5910470863631738653
+    second: ICR_logo_norm
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +142,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -182,7 +185,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: 47
     textureCompression: 1
@@ -406,7 +409,7 @@ TextureImporter:
         height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 80, y: 80, z: 80, w: 80}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -427,7 +430,7 @@ TextureImporter:
         height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 80, y: 80, z: 80, w: 80}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -448,7 +451,7 @@ TextureImporter:
         height: 326
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 80, y: 80, z: 80, w: 80}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -511,7 +514,7 @@ TextureImporter:
         height: 175
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 25, y: 25, z: 25, w: 25}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -560,6 +563,27 @@ TextureImporter:
       bones: []
       spriteID: 2813c67b3df99a0c0800000000000000
       internalID: -4563941015699050110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ICR_logo_norm
+      rect:
+        serializedVersion: 2
+        x: 1370
+        y: 412
+        width: 750
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d17e01a7fe5360250800000000000000
+      internalID: 5910470863631738653
       vertices: []
       indices: 
       edges: []
