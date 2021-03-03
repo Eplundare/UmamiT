@@ -21,14 +21,18 @@ public class BallSizer : MonoBehaviour
     public float minSize;
     public float maxSize;
     public Vector3 scaleTarget;
+    public Vector3 vectorZero;
 
     public AnimationCurve animCurve;
+    public AnimationCurve gameOverCurve;
 
     public void Start()
     {
         currentSize = 0.6f;
         scaleTarget = new Vector3(currentSize, currentSize, currentSize);
         ballScale.transform.localScale = scaleTarget;
+
+        vectorZero = new Vector3(0f, 0f, 0f);
     }
 
     public void OnTriggerEnter(Collider other)
@@ -84,19 +88,28 @@ public class BallSizer : MonoBehaviour
         {
             BallDestroyed();
         }
-        scaleTarget = new Vector3(currentSize, currentSize, currentSize);
-        LeanTween.scale(ballGo, scaleTarget, 0.5f).setEase(animCurve);
+
+        else if (currentSize >= minSize)
+        {
+            scaleTarget = new Vector3(currentSize, currentSize, currentSize);
+            LeanTween.scale(ballGo, scaleTarget, 0.5f).setEase(animCurve);
+        }
+        
     }
 
     public void BallDestroyed()
     {
         ballCopier.ballHasLost = true;
         ballCollider.enabled = false;
-        ballRenderer.enabled = false;
+        //ballRenderer.enabled = false;
+
         for (int i = 0; i < otherBallMeshes.Length; i++)
         {
             otherBallMeshes[i].enabled = false;
-        }        
+        }
+
+        LeanTween.scale(ballGo, vectorZero, 0.5f).setEase(gameOverCurve);
+
         //Destroy(ballGo);
         //lnBallJumper.ball = null;
         //ballSideController.ballPos = null;

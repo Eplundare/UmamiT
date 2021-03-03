@@ -1838,6 +1838,7 @@ GameObject:
   - component: {fileID: 5401135280053782669}
   - component: {fileID: 3417965846703745912}
   - component: {fileID: 7134196819645855658}
+  - component: {fileID: 8865175455360871885}
   m_Layer: 0
   m_Name: c Parent IceMan
   m_TagString: Grower
@@ -1947,6 +1948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfbb1f1fbba1a0f418e7ad98ee348467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  invinciGranter: 0
   flickerObj1: {fileID: 5038124474542039710}
   flickerObj2: {fileID: 6537782077049989619}
   collectibleParent: {fileID: 5401135280053782666}
@@ -1983,6 +1985,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  invincibiliter: {fileID: 8865175455360871885}
+--- !u!114 &8865175455360871885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401135280053782666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 922ea25c3ac001c43bea9cd3f0093bf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballCollider: {fileID: 0}
+  invinsibilityTime: 1
 --- !u!1 &5401135281217966838
 GameObject:
   m_ObjectHideFlags: 0

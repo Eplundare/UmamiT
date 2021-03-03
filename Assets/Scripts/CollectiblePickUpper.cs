@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class CollectiblePickUpper : MonoBehaviour
 {
+    public bool invinciGranter;
     public Flicker3d flickerObj1;
     public Flicker3d flickerObj2;
     public GameObject collectibleParent;
     //public float shrinkTime;
     public AnimationCurve animCurve;
+
+    public Invinsibiliter invincibiliter;
 
     private Vector3 vectorZero;
 
@@ -26,11 +29,22 @@ public class CollectiblePickUpper : MonoBehaviour
             {
                 flickerObj1.FlickerCollectible();
                 flickerObj2.FlickerCollectible();
+                if (invinciGranter == true)
+                {
+                    invincibiliter.GrantInvin();
+
+                }
 
             }
             else if (flickerObj2 == null)
             {
                 flickerObj1.FlickerCollectible();
+                if (invinciGranter == true)
+                {
+                    invincibiliter.GrantInvin();
+
+                }
+
             }
         }
 

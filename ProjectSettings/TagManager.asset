@@ -11,6 +11,7 @@ TagManager:
   - LoCandy
   - MedCandy
   - HiCandy
+  - Bridge
   layers:
   - Default
   - TransparentFX

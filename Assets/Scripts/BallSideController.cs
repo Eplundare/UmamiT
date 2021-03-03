@@ -37,7 +37,9 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
         AssignLerper();
 
         ballPos.transform.position = Vector3.Lerp(ballLimitA, ballLimitB, lerper);
-        
+        //ballPos.transform.position = Vector3.Lerp(posA.position.x, ballLimitB, lerper);
+
+
     }
 
     //public void OnPointerDown(PointerEventData pointerEventData)

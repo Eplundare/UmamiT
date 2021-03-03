@@ -117,6 +117,7 @@ GameObject:
   - component: {fileID: 1106578062734816142}
   - component: {fileID: 3863431017611570171}
   - component: {fileID: 2829195437482446272}
+  - component: {fileID: 3425679978853397055}
   m_Layer: 0
   m_Name: Parent 3d IsBall
   m_TagString: Ball
@@ -232,8 +233,7 @@ MonoBehaviour:
   scorer: {fileID: 2829195437482446272}
   flickerBall: {fileID: 9113584188196193562}
   faceAnimator: {fileID: 9061084543617312949}
-  lnBallJumper: {fileID: 0}
-  ballSideController: {fileID: 0}
+  ballCopier: {fileID: 0}
   ballGo: {fileID: 8557966551494780517}
   ballCollider: {fileID: 8557966551494780516}
   ballScale: {fileID: 8557966551494780513}
@@ -261,6 +261,7 @@ MonoBehaviour:
   minSize: 0.5
   maxSize: 1.5
   scaleTarget: {x: 0, y: 0, z: 0}
+  vectorZero: {x: 0, y: 0, z: 0}
   animCurve:
     serializedVersion: 2
     m_Curve:
@@ -303,6 +304,39 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  gameOverCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -2.193499
+      outSlope: -2.193499
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.18329589
+    - serializedVersion: 3
+      time: 0.30079228
+      value: -0.10663806
+      inSlope: 1.0996379
+      outSlope: 1.0996379
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &2829195437482446272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,6 +359,76 @@ MonoBehaviour:
   loCandyPoint: 10
   medCandyPoint: 20
   hiCandyPoint: 50
+--- !u!114 &3425679978853397055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557966551494780517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dedc1191dffa2b642818e689eff0e5d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gValues: {fileID: 0}
+  ballRotAnim: {fileID: 0}
+  newBallRotAnimSpeed: 2
+  ballGo: {fileID: 8557966551494780517}
+  newHeightFloat: 9
+  newHeightVector: {x: 0, y: 0, z: 0}
+  rampDuration: 2
+  animCurveBridge:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.35108462
+      value: 0.0044293553
+      inSlope: 0.07929746
+      outSlope: 0.07929746
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.21906438
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.5774703
+      value: 0.15476099
+      inSlope: 1.6832347
+      outSlope: 1.6832347
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.32996485
+    - serializedVersion: 3
+      time: 0.76172066
+      value: 0.71704024
+      inSlope: 3.0370371
+      outSlope: 3.0370371
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.24818026
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.041214474
+      outSlope: 0.041214474
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.47934017
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &9113584188196193562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,9 +753,9 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 3877946101389959612, guid: a326f2c1789adef4ba37b080800219c3, type: 3}
   m_PrefabInstance: {fileID: 5219191535922448649}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &4802612051754137029 stripped
+--- !u!23 &6904258791134629873 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 776876689160584396, guid: a326f2c1789adef4ba37b080800219c3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 1710965191854819064, guid: a326f2c1789adef4ba37b080800219c3, type: 3}
   m_PrefabInstance: {fileID: 5219191535922448649}
   m_PrefabAsset: {fileID: 0}
 --- !u!23 &8497323867475825085 stripped
@@ -739,8 +843,8 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7150618323122562637, guid: a326f2c1789adef4ba37b080800219c3, type: 3}
   m_PrefabInstance: {fileID: 5219191535922448649}
   m_PrefabAsset: {fileID: 0}
---- !u!23 &6904258791134629873 stripped
+--- !u!23 &4802612051754137029 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 1710965191854819064, guid: a326f2c1789adef4ba37b080800219c3, type: 3}
+  m_CorrespondingSourceObject: {fileID: 776876689160584396, guid: a326f2c1789adef4ba37b080800219c3, type: 3}
   m_PrefabInstance: {fileID: 5219191535922448649}
   m_PrefabAsset: {fileID: 0}
