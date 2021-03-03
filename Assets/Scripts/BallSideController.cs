@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class BallSideController : MonoBehaviour
+public class BallSideController : MonoBehaviour, IPointerDownHandler
 {
+    public static bool playerIsInControl;
+
     public bool isUsingPc;
 
     public float lerper;
@@ -16,10 +19,12 @@ public class BallSideController : MonoBehaviour
     public Vector3 ballLimitA;
     public Vector3 ballLimitB;
 
-
+    
 
     public void Start()
     {
+        playerIsInControl = true;
+
         lerper = 0.5f;
 
         ballLimitA = new Vector3(posA.position.x, ballPos.position.y, ballPos.position.z);
@@ -33,6 +38,11 @@ public class BallSideController : MonoBehaviour
 
         ballPos.transform.position = Vector3.Lerp(ballLimitA, ballLimitB, lerper);
         
+    }
+
+    public void OnPointerDown(PointerEventData pointerEventData)
+    {
+        playerIsInControl = true;
     }
 
     public void AssignLerper()

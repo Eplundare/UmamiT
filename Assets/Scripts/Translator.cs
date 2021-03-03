@@ -16,7 +16,7 @@ public class Translator : MonoBehaviour
 
     public void Update()
     {
-        forwardVector = new Vector3(0f, 0f, GlobalSpeeder.globalSpeed);
+        forwardVector = new Vector3(0f, 0f, GlobalValues.globalSpeed);
 
         transform.Translate(forwardVector * Time.deltaTime, Space.Self);
     }

@@ -961,9 +961,10 @@ GameObject:
   - component: {fileID: 4865660254959513495}
   - component: {fileID: 4865660254959513488}
   - component: {fileID: 4865660254959513489}
+  - component: {fileID: 8022791019533634550}
   m_Layer: 0
   m_Name: c Parent RockA
-  m_TagString: Untagged
+  m_TagString: Shrinker
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1045,3 +1046,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9195641, y: 2.7608376, z: 1.3750094}
   m_Center: {x: 0, y: 0.10082722, z: 0}
+--- !u!114 &8022791019533634550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4865660254959513491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2537b74272b566f4c8fd6df0bf7f8f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardVector: {x: 0, y: 0, z: 0}

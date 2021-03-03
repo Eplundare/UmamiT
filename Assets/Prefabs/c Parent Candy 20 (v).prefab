@@ -61,6 +61,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: c Parent Candy 20 (v)
       objectReference: {fileID: 0}
+    - target: {fileID: 7398132600314710530, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
+      propertyPath: m_TagString
+      value: MedCandy
+      objectReference: {fileID: 0}
     - target: {fileID: 7398132600314710533, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_Size.x
       value: 1.2295614

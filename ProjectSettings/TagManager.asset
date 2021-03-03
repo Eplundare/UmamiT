@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ball
+  - Grower
+  - Shrinker
+  - Berry
+  - LoCandy
+  - MedCandy
+  - HiCandy
   layers:
   - Default
   - TransparentFX

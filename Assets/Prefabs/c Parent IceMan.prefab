@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 3417965846703745912}
   m_Layer: 0
   m_Name: c Parent IceMan
-  m_TagString: Untagged
+  m_TagString: Grower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1913,7 +1913,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2537b74272b566f4c8fd6df0bf7f8f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardSpeed: 0
   forwardVector: {x: 0, y: 0, z: 0}
 --- !u!1 &5401135281217966838
 GameObject:
