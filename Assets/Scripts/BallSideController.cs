@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class BallSideController : MonoBehaviour, IPointerDownHandler
+public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
 {
     public static bool playerIsInControl;
 
@@ -40,10 +40,10 @@ public class BallSideController : MonoBehaviour, IPointerDownHandler
         
     }
 
-    public void OnPointerDown(PointerEventData pointerEventData)
-    {
-        playerIsInControl = true;
-    }
+    //public void OnPointerDown(PointerEventData pointerEventData)
+    //{
+    //    playerIsInControl = true;
+    //}
 
     public void AssignLerper()
     {
@@ -66,7 +66,7 @@ public class BallSideController : MonoBehaviour, IPointerDownHandler
 
                 lerper = (Input.mousePosition.x / Screen.width);
 
-                Debug.Log("Click Position : " + Input.mousePosition);
+                //Debug.Log("Click Position : " + Input.mousePosition);
             }
         }
        

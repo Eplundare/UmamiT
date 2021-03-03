@@ -16,7 +16,7 @@ public class Flicker3d : MonoBehaviour
     public Color whiteC;
     public Color hitC;
 
-    //public int flickerLoops;
+
 
     public void Start()
     {
@@ -50,6 +50,11 @@ public class Flicker3d : MonoBehaviour
     public void FlickerSad()
     {
         StartCoroutine(FlickerSadCoroutine());
+    }
+
+    public void FlickerCollectible()
+    {
+        StartCoroutine(FlickerCollectibleCoroutine());
     }
 
     IEnumerator FlickerCoroutine()
@@ -93,6 +98,39 @@ public class Flicker3d : MonoBehaviour
 
         ren.material.SetColor("_Color", originalC);
         
+
+    }
+
+    IEnumerator FlickerCollectibleCoroutine()
+    {
+
+        ren.material.SetColor("_Color", whiteC);
+        //if (isBall == true)
+        //{
+        //    whiteBerryUi.enabled = true;
+        //}
+        yield return new WaitForSeconds(0.1f);
+
+        ren.material.SetColor("_Color", originalC);
+        //if (isBall == true)
+        //{
+        //    whiteBerryUi.enabled = false;
+        //}
+        yield return new WaitForSeconds(0.1f);
+
+        ren.material.SetColor("_Color", whiteC);
+        //if (isBall == true)
+        //{
+        //    whiteBerryUi.enabled = true;
+        //}
+        yield return new WaitForSeconds(0.1f);
+
+        //ren.material.SetColor("_Color", originalC);
+        //if (isBall == true)
+        //{
+        //    whiteBerryUi.enabled = false;
+        //}
+        //yield return new WaitForSeconds(0.1f);
 
     }
 }

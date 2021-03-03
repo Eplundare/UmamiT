@@ -6,8 +6,14 @@ public class BallSilentCopier : MonoBehaviour
 {
     public Transform visibleBall;
     public Transform invisibleBall;
+
+    public bool ballHasLost;
     public void Update()
     {
-        invisibleBall.transform.position = visibleBall.position;
+        if (ballHasLost == false)
+        {
+            invisibleBall.transform.position = visibleBall.position;
+
+        }
     }
 }

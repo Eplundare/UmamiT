@@ -6,9 +6,10 @@ public class LnBallJumper : MonoBehaviour
 {
     public bool isJumping;
     public GameObject ball;
-    public Transform snomanJumpPos;
-    public Transform berryHiJumpPos;
-    public Transform berryLoJumpPos;
+    public float jumpHeight;
+    //public Transform snomanJumpPos;
+    //public Transform berryHiJumpPos;
+    //public Transform berryLoJumpPos;
     public float snomanJumpTime;
     public float berryJumpTime;
     public AnimationCurve riseCurve;
@@ -24,17 +25,21 @@ public class LnBallJumper : MonoBehaviour
 
     public void SnomanJump()
     {
-        if (isJumping == false)
+        if (ball != null)
         {
-            StartCoroutine(SnomanJumpCoroutine());
+            if (isJumping == false)
+            {
+                StartCoroutine(SnomanJumpCoroutine());
 
+            }
         }
+        
     }
 
     IEnumerator SnomanJumpCoroutine()
     {
         isJumping = true;
-        LeanTween.moveLocalY(ball, 1.2f, snomanJumpTime).setEase(riseCurve).setLoopPingPong(1);
+        LeanTween.moveLocalY(ball, jumpHeight, snomanJumpTime).setEase(riseCurve).setLoopPingPong(1);
         yield return new WaitForSeconds(snomanJumpTime * 2);
 
         isJumping = false;

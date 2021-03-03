@@ -8,9 +8,13 @@ public class BallSizer : MonoBehaviour
     public Flicker3d flickerBall;
     public Animator faceAnimator;
 
+    public BallSilentCopier ballCopier;
+
     public GameObject ballGo;
+    public Collider ballCollider;
     public Transform ballScale;
     public MeshRenderer ballRenderer;
+    public MeshRenderer[] otherBallMeshes;
 
     public float growthUnit;
     public float currentSize;
@@ -86,6 +90,15 @@ public class BallSizer : MonoBehaviour
 
     public void BallDestroyed()
     {
+        ballCopier.ballHasLost = true;
+        ballCollider.enabled = false;
         ballRenderer.enabled = false;
+        for (int i = 0; i < otherBallMeshes.Length; i++)
+        {
+            otherBallMeshes[i].enabled = false;
+        }        
+        //Destroy(ballGo);
+        //lnBallJumper.ball = null;
+        //ballSideController.ballPos = null;
     }
 }

@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 7750571577200813047}
   - component: {fileID: 7750571577200813046}
   - component: {fileID: 7750571577200813033}
+  - component: {fileID: 1179872403594982535}
   m_Layer: 0
-  m_Name: Parts Berry
+  m_Name: Animatable Parts Berry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,6 +98,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &1179872403594982535
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750571577200813035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: db50e769064115f41a8224dbda040227, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7750571578175871077
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,6 +130,7 @@ GameObject:
   - component: {fileID: 7750571578175871075}
   - component: {fileID: 7750571578175871074}
   - component: {fileID: 8579018291852776883}
+  - component: {fileID: 8073355099293189774}
   m_Layer: 0
   m_Name: c Parent Berry
   m_TagString: Berry
@@ -126,7 +147,7 @@ Transform:
   m_GameObject: {fileID: 7750571578175871077}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 2.2000003}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 7750571577200813032}
   m_Father: {fileID: 0}
@@ -207,6 +228,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardVector: {x: 0, y: 0, z: 0}
+--- !u!114 &8073355099293189774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750571578175871077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbb1f1fbba1a0f418e7ad98ee348467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickerObj1: {fileID: 3440615241415511524}
+  flickerObj2: {fileID: 0}
+  collectibleParent: {fileID: 7750571578175871077}
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -2.5324206
+      outSlope: -2.5324206
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.16557494
+    - serializedVersion: 3
+      time: 0.23630188
+      value: -0.20220722
+      inSlope: 0.48635852
+      outSlope: 0.48635852
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7750571579072135705
 GameObject:
   m_ObjectHideFlags: 0
@@ -220,6 +289,7 @@ GameObject:
   - component: {fileID: 7750571579072135717}
   - component: {fileID: 7750571579072135716}
   - component: {fileID: 7750571579072135719}
+  - component: {fileID: 3440615241415511524}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -1148,6 +1218,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &3440615241415511524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7750571579072135705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca1c7fef09564796db27eda27c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ren: {fileID: 0}
+  objMaterial: {fileID: 0}
+  isBall: 0
+  whiteBerryUi: {fileID: 0}
+  originalC: {r: 0, g: 0, b: 0, a: 0}
+  whiteC: {r: 0, g: 0, b: 0, a: 0}
+  hitC: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8151128507795841568
 GameObject:
   m_ObjectHideFlags: 0

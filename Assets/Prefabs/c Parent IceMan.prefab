@@ -866,6 +866,7 @@ GameObject:
   - component: {fileID: 5401135279301504383}
   - component: {fileID: 5401135279301504380}
   - component: {fileID: 5401135279301504381}
+  - component: {fileID: 5038124474542039710}
   m_Layer: 0
   m_Name: Torso
   m_TagString: Untagged
@@ -1643,7 +1644,7 @@ MonoBehaviour:
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
-  m_SelectedVertices: 06000000
+  m_SelectedVertices: 
 --- !u!23 &5401135279301504383
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1707,6 +1708,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &5038124474542039710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401135279301504379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca1c7fef09564796db27eda27c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ren: {fileID: 0}
+  objMaterial: {fileID: 0}
+  isBall: 0
+  whiteBerryUi: {fileID: 0}
+  originalC: {r: 0, g: 0, b: 0, a: 0}
+  whiteC: {r: 0, g: 0, b: 0, a: 0}
+  hitC: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &5401135279346938628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1817,6 +1837,7 @@ GameObject:
   - component: {fileID: 5401135280053782668}
   - component: {fileID: 5401135280053782669}
   - component: {fileID: 3417965846703745912}
+  - component: {fileID: 7134196819645855658}
   m_Layer: 0
   m_Name: c Parent IceMan
   m_TagString: Grower
@@ -1833,7 +1854,7 @@ Transform:
   m_GameObject: {fileID: 5401135280053782666}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.9, z: 0.9}
   m_Children:
   - {fileID: 5401135279346938631}
   m_Father: {fileID: 0}
@@ -1914,6 +1935,54 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardVector: {x: 0, y: 0, z: 0}
+--- !u!114 &7134196819645855658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401135280053782666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbb1f1fbba1a0f418e7ad98ee348467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flickerObj1: {fileID: 5038124474542039710}
+  flickerObj2: {fileID: 6537782077049989619}
+  collectibleParent: {fileID: 5401135280053782666}
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -3.186917
+      outSlope: -3.186917
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.20487715
+    - serializedVersion: 3
+      time: 0.26923996
+      value: -0.2422844
+      inSlope: 0.3944369
+      outSlope: 0.3944369
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5401135281217966838
 GameObject:
   m_ObjectHideFlags: 0
@@ -1927,6 +1996,7 @@ GameObject:
   - component: {fileID: 5401135281217966794}
   - component: {fileID: 5401135281217966795}
   - component: {fileID: 5401135281217966792}
+  - component: {fileID: 6537782077049989619}
   m_Layer: 0
   m_Name: Head
   m_TagString: Untagged
@@ -2768,6 +2838,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &6537782077049989619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5401135281217966838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca1c7fef09564796db27eda27c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ren: {fileID: 0}
+  objMaterial: {fileID: 0}
+  isBall: 0
+  whiteBerryUi: {fileID: 0}
+  originalC: {r: 0, g: 0, b: 0, a: 0}
+  whiteC: {r: 0, g: 0, b: 0, a: 0}
+  hitC: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &8906510784827760931
 GameObject:
   m_ObjectHideFlags: 0
