@@ -8,6 +8,8 @@ public class BallSizer : MonoBehaviour
     public Flicker3d flickerBall;
     public Animator faceAnimator;
 
+    public ManagerGameOver gameOverManager;
+
     public BallSilentCopier ballCopier;
 
     public GameObject ballGo;
@@ -73,7 +75,7 @@ public class BallSizer : MonoBehaviour
         if (currentSize < maxSize)
         {
             scaleTarget = new Vector3(currentSize, currentSize, currentSize);
-            LeanTween.scale(ballGo, scaleTarget, 0.5f).setEase(animCurve);
+            LeanTween.scale(ballGo, scaleTarget, 0.5f).setEase(animCurve).setDelay(0.25f);
         }
         else if (currentSize >= maxSize)
         {
@@ -109,6 +111,9 @@ public class BallSizer : MonoBehaviour
         }
 
         LeanTween.scale(ballGo, vectorZero, 0.5f).setEase(gameOverCurve);
+
+        gameOverManager.isGameOver = true;
+        gameOverManager.WindowGameOver();
 
         //Destroy(ballGo);
         //lnBallJumper.ball = null;
