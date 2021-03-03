@@ -7,6 +7,8 @@ public class Scorer : MonoBehaviour
 {
     public float currentPoints;
     public TextMeshProUGUI tmpPointsDisplay;
+
+    public LnBallJumper ballManager;
     public Flicker3d flickerBall;
     public Animator sprinkles1Animator;
     public Animator sprinkles2Animator;
@@ -34,6 +36,7 @@ public class Scorer : MonoBehaviour
         currentPoints += snowmanPoint;
         tmpPointsDisplay.text = "" + currentPoints;
         flickerBall.Flicker();
+        ballManager.SnomanJump();
 
     }
 
