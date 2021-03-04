@@ -75,6 +75,16 @@ public class BallSizer : MonoBehaviour
             landSequencer.StartLanding();
             ballAnimator.SetBool("isRolling", false);
         }
+
+        else if (other.tag == "GoalCone")
+        {
+            landSequencer.LandingOnCone();
+        }
+
+        else if (other.tag == "GoalSnow")
+        {
+            landSequencer.LandingOnSnow();
+        }
     }
 
     public void BallGrow()

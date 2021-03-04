@@ -7,11 +7,19 @@ public class LandingSequencer : MonoBehaviour
     public GameObject landingParent;
     public GameObject cloudsParent;
 
+    public GameObject ballGo;
+    public GameObject silentBallGo;
+
+    public GameObject landCam3;
+    public GameObject landCam4;
+    public ManagerGameOver windowManager;
+
     public bool hasLanded;
     public GlobalValues gValues;
     public GameObject ghostObject;
     public Transform ghostObjTrans;
-    public float ghostTimer;
+    public float ghostTimerStop;
+    public float ghostTimerSnow;
     public AnimationCurve ghostCurve;
     public float ghostLerper;
     public float originalGSpeed;
@@ -63,9 +71,23 @@ public class LandingSequencer : MonoBehaviour
     IEnumerator LandingOnConeCoroutine()
     {
         hasLanded = true;
-        LeanTween.moveLocalZ(ghostObject, 0f, ghostTimer).setEase(ghostCurve); // THIS WILL SLOW DOWN GLOBAL SPEED.
+        BallSideController.playerIsInControl = false;
+        LeanTween.moveLocalZ(ghostObject, 0f, ghostTimerStop).setEase(ghostCurve); // THIS WILL SLOW DOWN GLOBAL SPEED.
 
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(0.02f);
+
+        ballGo.transform.parent = landingParent.transform;
+        silentBallGo.transform.parent = landingParent.transform;
+
+        yield return new WaitForSeconds(1.5f);
+
+        landCam3.SetActive(true);
+
+        yield return new WaitForSeconds(4f);
+
+        landCam4.SetActive(true);
+        windowManager.WindowScore();
+
     }
 
     public void LandingOnSnow()
@@ -76,8 +98,22 @@ public class LandingSequencer : MonoBehaviour
     IEnumerator LandingOnSnowCoroutine()
     {
         hasLanded = true;
-        LeanTween.moveLocalZ(ghostObject, 0f, ghostTimer).setEase(ghostCurve); // THIS WILL SLOW DOWN GLOBAL SPEED.
+        BallSideController.playerIsInControl = false;
+        LeanTween.moveLocalZ(ghostObject, 0f, ghostTimerStop).setEase(ghostCurve); // THIS WILL SLOW DOWN GLOBAL SPEED.
+        
+        yield return new WaitForSeconds(0.05f);
 
-        yield return new WaitForSeconds(0f);
+        ballGo.transform.parent = landingParent.transform;
+        silentBallGo.transform.parent = landingParent.transform;
+
+        yield return new WaitForSeconds(1.5f);
+
+        landCam3.SetActive(true);
+
+        yield return new WaitForSeconds(1f);
+
+        landCam4.SetActive(true);
+        windowManager.WindowScore();
+
     }
 }
