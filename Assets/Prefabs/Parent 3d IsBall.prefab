@@ -235,7 +235,9 @@ MonoBehaviour:
   scorer: {fileID: 2829195437482446272}
   flickerBall: {fileID: 9113584188196193562}
   faceAnimator: {fileID: 9061084543617312949}
+  ballAnimator: {fileID: 8685309429068050582}
   gameOverManager: {fileID: 0}
+  landSequencer: {fileID: 0}
   ballCopier: {fileID: 0}
   ballGo: {fileID: 8557966551494780517}
   ballCollider: {fileID: 8557966551494780516}
@@ -375,6 +377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gValues: {fileID: 0}
+  ballSideCtrl: {fileID: 0}
   gameOverManager: {fileID: 0}
   ballRotAnim: {fileID: 0}
   newBallRotAnimSpeed: 2
@@ -435,6 +438,12 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  animCurveSimpleS:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
   vcam1: {fileID: 0}
   vcam2: {fileID: 0}
 --- !u!114 &7969603844354076748
@@ -463,6 +472,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballSideCtrl: {fileID: 0}
+  camConfiner: {fileID: 0}
+  normalConfinerXSize: 0
+  candyConfinerXSize: 0
 --- !u!114 &9113584188196193562
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ public class ManagerGameOver : MonoBehaviour
 {
     public bool isGameOver;
 
+    public Animator ballAnimator;
+
     public GlobalValues gValues;
     public float originalGSpeed;
     public GameObject gameOverWindow;
@@ -29,22 +31,22 @@ public class ManagerGameOver : MonoBehaviour
     public GameObject pauseButton;
     public GameObject resumeButton;
 
-    public void Start()
-    {
-        originalGSpeed = gValues.whatSpeed;
-        LeanTween.moveLocalZ(ghostObject, originalGSpeed, 0f);
-    }
+    //public void Start()
+    //{
+    //    originalGSpeed = gValues.whatSpeed;
+    //    LeanTween.moveLocalZ(ghostObject, originalGSpeed, 0f);
+    //}
 
-    public void Update()
-    {
-        ghostLerper = ghostObjTrans.localPosition.z;
-        if (isGameOver == true)
-        {
-            gValues.whatSpeed = ghostLerper;
+    //public void Update()
+    //{
+    //    ghostLerper = ghostObjTrans.localPosition.z;
+    //    if (isGameOver == true)
+    //    {
+    //        gValues.whatSpeed = ghostLerper;
 
-        }
+    //    }
 
-    }
+    //}
 
     public void WindowGameOver()
     {
@@ -65,6 +67,10 @@ public class ManagerGameOver : MonoBehaviour
         pauseButton.SetActive(false);
 
         BallSideController.playerIsInControl = false;
+
+        ballAnimator.SetBool("isRolling", false);
+        ballAnimator.speed = 2f;
+
     }
 
     public void WindowPunpause()
@@ -81,11 +87,14 @@ public class ManagerGameOver : MonoBehaviour
 
         LeanTween.moveLocalZ(ghostObject, originalGSpeed, ghostTimer).setEase(ghostCurve).setDelay(swipeTime/2f); // THIS WILL SLOW DOWN GLOBAL SPEED.
 
-        yield return new WaitForSeconds(swipeTime / 1f);
+        ballAnimator.SetBool("isRolling", true);
+        ballAnimator.speed = 1f;
+
+        yield return new WaitForSeconds(swipeTime / 2f);
         BallSideController.playerIsInControl = true;
 
         //yield return new WaitForSeconds(ghostTimer + (swipeTime/2f));
-
+        yield return new WaitForSeconds(swipeTime / 2f);
         yield return new WaitForSeconds(ghostTimer);
         isGameOver = false;
     }

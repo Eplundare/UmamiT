@@ -7,8 +7,10 @@ public class BallSizer : MonoBehaviour
     public Scorer scorer;
     public Flicker3d flickerBall;
     public Animator faceAnimator;
+    public Animator ballAnimator;
 
     public ManagerGameOver gameOverManager;
+    public LandingSequencer landSequencer;
 
     public BallSilentCopier ballCopier;
 
@@ -66,6 +68,12 @@ public class BallSizer : MonoBehaviour
         else if (other.tag == "HiCandy")
         {
             scorer.CandyHiScorer();
+        }
+
+        else if (other.tag == "LandingSequencer")
+        {
+            landSequencer.StartLanding();
+            ballAnimator.SetBool("isRolling", false);
         }
     }
 

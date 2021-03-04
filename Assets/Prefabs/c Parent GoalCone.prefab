@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 547112705103316591}
   m_Layer: 0
   m_Name: c Parent GoalCone
-  m_TagString: Untagged
+  m_TagString: GoalCone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

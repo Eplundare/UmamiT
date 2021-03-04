@@ -15,6 +15,9 @@ TagManager:
   - PauseRemover
   - CandyLimiter
   - NormalLimiter
+  - LandingSequencer
+  - GoalCone
+  - GoalSnow
   layers:
   - Default
   - TransparentFX
