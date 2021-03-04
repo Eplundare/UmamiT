@@ -12,6 +12,7 @@ TagManager:
   - MedCandy
   - HiCandy
   - Bridge
+  - PauseRemover
   layers:
   - Default
   - TransparentFX

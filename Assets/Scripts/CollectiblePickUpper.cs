@@ -5,6 +5,7 @@ using UnityEngine;
 public class CollectiblePickUpper : MonoBehaviour
 {
     public bool invinciGranter;
+    public bool isBridge;
     public Flicker3d flickerObj1;
     public Flicker3d flickerObj2;
     public GameObject collectibleParent;
@@ -48,7 +49,11 @@ public class CollectiblePickUpper : MonoBehaviour
             }
         }
 
-        LeanTween.scale(collectibleParent, vectorZero, 0.3f).setEase(animCurve);
+        if (isBridge == false)
+        {
+            LeanTween.scale(collectibleParent, vectorZero, 0.3f).setEase(animCurve);
+
+        }
     }
 
 }

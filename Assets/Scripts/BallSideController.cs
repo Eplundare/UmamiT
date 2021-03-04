@@ -49,28 +49,36 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
 
     public void AssignLerper()
     {
-        // FOR TOUCH CONTROLS
-        if (isUsingPc == false)
+        if (playerIsInControl == true)
         {
-            if (Input.touchCount > 0)
+            // FOR TOUCH CONTROLS
+            if (isUsingPc == false)
             {
-                Touch touch = Input.GetTouch(0);
+                if (Input.touchCount > 0)
+                {
+                    Touch touch = Input.GetTouch(0);
 
-                lerper = (touch.position.x / Screen.width);
+                    if (touch.position.y < 1850)
+                    {
+                        lerper = (touch.position.x / Screen.width);
+                    }
+                }
+            }
 
+            else if (isUsingPc == true)
+            {
+                if (Input.GetMouseButton(0))
+                {
+                    if (Input.mousePosition.y < 1850)
+                    {
+                        lerper = (Input.mousePosition.x / Screen.width);
+                    }
+
+                    //Debug.Log("Click Position : " + Input.mousePosition);
+                }
             }
         }
-        
-        else if (isUsingPc == true)
-        {
-            if (Input.GetMouseButton(0))
-            {
-
-                lerper = (Input.mousePosition.x / Screen.width);
-
-                //Debug.Log("Click Position : " + Input.mousePosition);
-            }
-        }
+       
        
     }
 

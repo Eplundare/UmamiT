@@ -118,6 +118,7 @@ GameObject:
   - component: {fileID: 3863431017611570171}
   - component: {fileID: 2829195437482446272}
   - component: {fileID: 3425679978853397055}
+  - component: {fileID: 7969603844354076748}
   m_Layer: 0
   m_Name: Parent 3d IsBall
   m_TagString: Ball
@@ -233,6 +234,7 @@ MonoBehaviour:
   scorer: {fileID: 2829195437482446272}
   flickerBall: {fileID: 9113584188196193562}
   faceAnimator: {fileID: 9061084543617312949}
+  gameOverManager: {fileID: 0}
   ballCopier: {fileID: 0}
   ballGo: {fileID: 8557966551494780517}
   ballCollider: {fileID: 8557966551494780516}
@@ -372,11 +374,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gValues: {fileID: 0}
+  gameOverManager: {fileID: 0}
   ballRotAnim: {fileID: 0}
   newBallRotAnimSpeed: 2
+  newGlobalSpeed: 0
+  normalGlobalSpeed: 0
   ballGo: {fileID: 8557966551494780517}
+  bridgeGo: {fileID: 0}
   newHeightFloat: 9
-  newHeightVector: {x: 0, y: 0, z: 0}
   rampDuration: 2
   animCurveBridge:
     serializedVersion: 2
@@ -429,6 +434,21 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  vcam1: {fileID: 0}
+  vcam2: {fileID: 0}
+--- !u!114 &7969603844354076748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8557966551494780517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f24562944fc334c824125d60bdc151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseButton: {fileID: 0}
 --- !u!114 &9113584188196193562
 MonoBehaviour:
   m_ObjectHideFlags: 0

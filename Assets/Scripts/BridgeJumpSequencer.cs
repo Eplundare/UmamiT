@@ -5,6 +5,7 @@ using UnityEngine;
 public class BridgeJumpSequencer : MonoBehaviour
 {
     public GlobalValues gValues;
+    public ManagerGameOver gameOverManager;
     public Animator ballRotAnim;
     public float newBallRotAnimSpeed;
     public float newGlobalSpeed;
@@ -30,6 +31,7 @@ public class BridgeJumpSequencer : MonoBehaviour
         if(other.tag == "Bridge")
         {
             vcam1.SetActive(false);
+            gameOverManager.isGameOver = false; // OVERRIDES PAUSE SEQUENCE SUPPOSEDLY;
 
             ballRotAnim.speed = newBallRotAnimSpeed;
             gValues.whatSpeed = newGlobalSpeed;
