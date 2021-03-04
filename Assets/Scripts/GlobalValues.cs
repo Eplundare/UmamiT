@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class GlobalValues : MonoBehaviour
 {
+    // whatSpeed WILL BE -5.
     public static float globalSpeed;
     public float whatSpeed;
 
     public static int globalFlickerLoops;
     public int whatFlickerLoops;
 
-    //public static float sizerUnit;
-    //public float whatSize;
+    public void Start()
+    {
+        whatSpeed = -5f;
+        whatSpeed = 0f;
+    }
 
     public void Update()
     {

@@ -25,7 +25,7 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
 
     public void Start()
     {
-        playerIsInControl = true;
+        //playerIsInControl = true;
 
         lerper = 0.5f;
 
