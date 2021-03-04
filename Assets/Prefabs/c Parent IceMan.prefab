@@ -848,7 +848,7 @@ MeshCollider:
   m_GameObject: {fileID: 523442909186503734}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -1703,7 +1703,7 @@ MeshCollider:
   m_GameObject: {fileID: 5401135279301504379}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -1949,6 +1949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   invinciGranter: 0
+  isBridge: 0
   flickerObj1: {fileID: 5038124474542039710}
   flickerObj2: {fileID: 6537782077049989619}
   collectibleParent: {fileID: 5401135280053782666}
@@ -2850,7 +2851,7 @@ MeshCollider:
   m_GameObject: {fileID: 5401135281217966838}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
@@ -3722,7 +3723,7 @@ MeshCollider:
   m_GameObject: {fileID: 8906510784827760931}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30

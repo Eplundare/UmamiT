@@ -8,6 +8,7 @@ public class CollectiblePickUpper : MonoBehaviour
     public bool isBridge;
     public Flicker3d flickerObj1;
     public Flicker3d flickerObj2;
+    public Flicker3d flickerObj3;
     public GameObject collectibleParent;
     //public float shrinkTime;
     public AnimationCurve animCurve;
@@ -26,7 +27,7 @@ public class CollectiblePickUpper : MonoBehaviour
     {
         if (other.tag == "Ball")
         {
-            if (flickerObj2 != null)
+            if (flickerObj2 != null && flickerObj3 == null)
             {
                 flickerObj1.FlickerCollectible();
                 flickerObj2.FlickerCollectible();
@@ -37,7 +38,20 @@ public class CollectiblePickUpper : MonoBehaviour
                 }
 
             }
-            else if (flickerObj2 == null)
+            else if (flickerObj3 != null)
+            {
+                flickerObj1.FlickerCollectible();
+                flickerObj2.FlickerCollectible();
+                flickerObj3.FlickerCollectible();
+
+                if (invinciGranter == true)
+                {
+                    invincibiliter.GrantInvin();
+
+                }
+
+            }
+            else if (flickerObj2 == null && flickerObj3 == null)
             {
                 flickerObj1.FlickerCollectible();
                 if (invinciGranter == true)

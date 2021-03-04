@@ -13,6 +13,8 @@ TagManager:
   - HiCandy
   - Bridge
   - PauseRemover
+  - CandyLimiter
+  - NormalLimiter
   layers:
   - Default
   - TransparentFX

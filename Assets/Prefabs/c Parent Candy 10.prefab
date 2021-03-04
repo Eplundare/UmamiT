@@ -26,15 +26,15 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3068638053777969758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.52}
+  m_LocalPosition: {x: 0, y: 0, z: -0.5200043}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_Children: []
-  m_Father: {fileID: 7398132600314710534}
-  m_RootOrder: 0
+  m_Father: {fileID: 3068638054082927050}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 2.3}
+  m_AnchoredPosition: {x: 0, y: -0.030000001}
   m_SizeDelta: {x: 5.71, y: 2.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3068638053777969755
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 10
+  m_text: '?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 768c2dc4df909c74e81074a0b0694185, type: 2}
   m_sharedMaterial: {fileID: -951386109757781640, guid: 768c2dc4df909c74e81074a0b0694185, type: 2}
@@ -125,8 +125,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -182,6 +182,7 @@ GameObject:
   - component: {fileID: 3068638054082927047}
   - component: {fileID: 3068638054082927044}
   - component: {fileID: 3068638054082927045}
+  - component: {fileID: 9197732987062984404}
   m_Layer: 0
   m_Name: Animatabke Candy
   m_TagString: Untagged
@@ -201,8 +202,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7398132599876268431}
+  - {fileID: 3068638053777969753}
   m_Father: {fileID: 7398132600314710534}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3068638054082927047
 MeshFilter:
@@ -266,6 +268,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!95 &9197732987062984404
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068638054082927051}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1c8f0b8eb5befcb49aa4d6a930512b1b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3068638054189408939
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +300,7 @@ GameObject:
   - component: {fileID: 3068638054189408935}
   - component: {fileID: 3068638054189408932}
   - component: {fileID: 3068638054189408933}
+  - component: {fileID: 2177152181158657086}
   m_Layer: 0
   m_Name: envolturaA
   m_TagString: Untagged
@@ -655,7 +677,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c12b33466e1f7e242a634ca830591b92, type: 2}
+  - {fileID: 2100000, guid: 8ad4585499c4b074fa0b9739aa6f17d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -699,6 +721,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &2177152181158657086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068638054189408939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca1c7fef09564796db27eda27c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ren: {fileID: 0}
+  objMaterial: {fileID: 0}
+  isBall: 0
+  whiteBerryUi: {fileID: 0}
+  originalC: {r: 0, g: 0, b: 0, a: 0}
+  whiteC: {r: 0, g: 0, b: 0, a: 0}
+  hitC: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &3068638055038795405
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,6 +753,7 @@ GameObject:
   - component: {fileID: 3068638055038795401}
   - component: {fileID: 3068638055038795406}
   - component: {fileID: 3068638055038795407}
+  - component: {fileID: 2437309208527004351}
   m_Layer: 0
   m_Name: envolturaB
   m_TagString: Untagged
@@ -1088,7 +1130,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c12b33466e1f7e242a634ca830591b92, type: 2}
+  - {fileID: 2100000, guid: 8ad4585499c4b074fa0b9739aa6f17d0, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1132,6 +1174,25 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &2437309208527004351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3068638055038795405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca1c7fef09564796db27eda27c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ren: {fileID: 0}
+  objMaterial: {fileID: 0}
+  isBall: 0
+  whiteBerryUi: {fileID: 0}
+  originalC: {r: 0, g: 0, b: 0, a: 0}
+  whiteC: {r: 0, g: 0, b: 0, a: 0}
+  hitC: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &7398132599876268428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1158,7 +1219,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7398132599876268428}
-  m_LocalRotation: {x: -0, y: -0, z: 0.25881857, w: 0.965926}
+  m_LocalRotation: {x: -0, y: -0, z: 0.13052595, w: 0.99144495}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_Children:
@@ -1167,7 +1228,7 @@ Transform:
   - {fileID: 3068638055038795404}
   m_Father: {fileID: 3068638054082927050}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 15}
 --- !u!33 &7398132599876268432
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1242,6 +1303,8 @@ GameObject:
   - component: {fileID: 7398132600314710535}
   - component: {fileID: 7398132600314710532}
   - component: {fileID: 7398132600314710533}
+  - component: {fileID: 8483207176054324992}
+  - component: {fileID: 7335376765126430138}
   m_Layer: 0
   m_Name: c Parent Candy 10
   m_TagString: LoCandy
@@ -1260,7 +1323,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3068638053777969753}
   - {fileID: 3068638054082927050}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -1325,8 +1387,73 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.554599, y: 2, z: 1}
+  m_Size: {x: 1.8, y: 4.5, z: 1}
   m_Center: {x: 0, y: 0.503163, z: 0}
+--- !u!114 &8483207176054324992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398132600314710530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2537b74272b566f4c8fd6df0bf7f8f0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardVector: {x: 0, y: 0, z: 0}
+--- !u!114 &7335376765126430138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398132600314710530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfbb1f1fbba1a0f418e7ad98ee348467, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invinciGranter: 0
+  isBridge: 0
+  flickerObj1: {fileID: 982033889558984469}
+  flickerObj2: {fileID: 2177152181158657086}
+  flickerObj3: {fileID: 2437309208527004351}
+  collectibleParent: {fileID: 7398132600314710530}
+  animCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: -3.074074
+      outSlope: -3.074074
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.16377603
+    - serializedVersion: 3
+      time: 0.25201246
+      value: -0.15463826
+      inSlope: 1.0331457
+      outSlope: 1.0331457
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  invincibiliter: {fileID: 0}
 --- !u!1 &7398132601225138302
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,6 +1467,7 @@ GameObject:
   - component: {fileID: 7398132601225138242}
   - component: {fileID: 7398132601225138243}
   - component: {fileID: 7398132601225138240}
+  - component: {fileID: 982033889558984469}
   m_Layer: 0
   m_Name: Candy
   m_TagString: Untagged
@@ -1984,7 +2112,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c12b33466e1f7e242a634ca830591b92, type: 2}
+  - {fileID: 2100000, guid: 27eb946a1c970864eb762957c9f4ea82, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2028,3 +2156,22 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &982033889558984469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7398132601225138302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b4ca1c7fef09564796db27eda27c04c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ren: {fileID: 0}
+  objMaterial: {fileID: 0}
+  isBall: 0
+  whiteBerryUi: {fileID: 0}
+  originalC: {r: 0, g: 0, b: 0, a: 0}
+  whiteC: {r: 0, g: 0, b: 0, a: 0}
+  hitC: {r: 0, g: 0, b: 0, a: 0}

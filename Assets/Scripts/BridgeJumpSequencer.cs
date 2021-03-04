@@ -5,6 +5,7 @@ using UnityEngine;
 public class BridgeJumpSequencer : MonoBehaviour
 {
     public GlobalValues gValues;
+    public BallSideController ballSideCtrl;
     public ManagerGameOver gameOverManager;
     public Animator ballRotAnim;
     public float newBallRotAnimSpeed;
@@ -17,6 +18,7 @@ public class BridgeJumpSequencer : MonoBehaviour
     //public Vector3 newHeightVector;
     public float rampDuration;
     public AnimationCurve animCurveBridge;
+    public AnimationCurve animCurveSimpleS;
 
     public GameObject vcam1;
     public GameObject vcam2;
@@ -37,6 +39,11 @@ public class BridgeJumpSequencer : MonoBehaviour
             gValues.whatSpeed = newGlobalSpeed;
             //LeanTween.moveLocalY(ballGo, newHeightFloat, rampDuration).setEase(animCurveBridge);
             LeanTween.moveLocalY(bridgeGo, -newHeightFloat, rampDuration).setEase(animCurveBridge);
+
+            // Center Ball
+            BallSideController.playerIsInControl = false;
+            //ballSideCtrl.lerper = 0.5f;
+            LeanTween.moveLocalX(ballGo, 0f, 1f).setEase(animCurveSimpleS);
 
 
         }

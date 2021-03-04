@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3068638053777969752, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_text
-      value: 50
+      value: '?'
       objectReference: {fileID: 0}
     - target: {fileID: 3068638054189408932, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_Mesh
@@ -23,10 +23,18 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3068638054189408935, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d43ec5064f58476499e9333db41a8ace, type: 2}
     - target: {fileID: 3068638055038795400, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 3068638055038795401, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d43ec5064f58476499e9333db41a8ace, type: 2}
     - target: {fileID: 3068638055038795406, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -37,11 +45,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7398132599876268431, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.8
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 7398132599876268431, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.8
+      value: 1.4
       objectReference: {fileID: 0}
     - target: {fileID: 7398132599876268431, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62,10 +70,6 @@ PrefabInstance:
     - target: {fileID: 7398132600314710530, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_TagString
       value: HiCandy
-      objectReference: {fileID: 0}
-    - target: {fileID: 7398132600314710533, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
-      propertyPath: m_Size.x
-      value: 0.9373276
       objectReference: {fileID: 0}
     - target: {fileID: 7398132600314710533, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_Center.x
@@ -119,6 +123,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 7398132601225138242, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 84d76d6f3690c964a860eaa995f81f62, type: 2}
     - target: {fileID: 7398132601225138243, guid: ac1b06f43e7c20646890fe60b7bc9b19, type: 3}
       propertyPath: m_Mesh
       value: 

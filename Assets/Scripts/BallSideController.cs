@@ -15,6 +15,8 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
 
     public Transform posA;
     public Transform posB;
+    public Transform posCcandy;
+    public Transform posDcandy;
 
     public Vector3 ballLimitA;
     public Vector3 ballLimitB;
@@ -36,8 +38,34 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
     {
         AssignLerper();
 
-        ballPos.transform.position = Vector3.Lerp(ballLimitA, ballLimitB, lerper);
-        //ballPos.transform.position = Vector3.Lerp(posA.position.x, ballLimitB, lerper);
+        if (playerIsInControl == true)
+        {
+            ballPos.transform.position = Vector3.Lerp(ballLimitA, ballLimitB, lerper);
+
+        }
+
+
+    }
+
+    public void CandyLimiter()
+    {
+        lerper = 0.5f;
+
+        ballLimitA = new Vector3(posCcandy.position.x, ballPos.position.y, ballPos.position.z);
+        ballLimitB = new Vector3(posDcandy.position.x, ballPos.position.y, ballPos.position.z);
+
+        playerIsInControl = true;
+
+    }
+
+    public void ResetLimiter()
+    {
+        ballLimitA = new Vector3(posA.position.x, ballPos.position.y, ballPos.position.z);
+        ballLimitB = new Vector3(posB.position.x, ballPos.position.y, ballPos.position.z);
+
+        lerper = 0.5f;
+
+        playerIsInControl = true;
 
 
     }
