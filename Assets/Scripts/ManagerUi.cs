@@ -9,6 +9,10 @@ public class ManagerUi : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     public bool isStartButt;
     public bool isLevelButt;
+    public bool isHinterUp;
+    public bool isHinterSide;
+
+    public ManagerStarterA managerStarterA;
 
     public Image startNormalSquare;
     public TextMeshProUGUI startNormalTxt;
@@ -22,6 +26,11 @@ public class ManagerUi : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             startNormalSquare.enabled = false;
             startNormalTxt.enabled = false;
         }
+
+        else if (isHinterSide == true)
+        {
+            managerStarterA.HideSideArrowHinter();
+        }
     }
 
     public void OnPointerUp(PointerEventData pointerEventData)
@@ -31,5 +40,12 @@ public class ManagerUi : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             startNormalSquare.enabled = true;
             startNormalTxt.enabled = true;
         }
+
+        else if (isHinterUp == true)
+        {
+            managerStarterA.StartRolling();
+        }
+
+        
     }
 }

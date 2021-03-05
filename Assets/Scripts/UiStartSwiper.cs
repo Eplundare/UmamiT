@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UiStartSwiper : MonoBehaviour
 {
     public Canvas startCanvas;
+    public string firstLvlName;
 
     public float screenOutY;
     public GameObject startParent;
@@ -40,6 +42,7 @@ public class UiStartSwiper : MonoBehaviour
 
         yield return new WaitForSeconds(swipeTime + 1f);
         startCanvas.enabled = false;
+        SceneManager.LoadScene(firstLvlName);
 
     }
 }

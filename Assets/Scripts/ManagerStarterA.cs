@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ManagerStarterA : MonoBehaviour
 {
+    public Animator upArrowAnimator;
+    public GameObject upArrowGo;
+    public Animator sideArrowAnimator;
+    public GameObject sideArrowGo;
+
     public bool forgetAboutThis;
     public bool startedRolling;
     public Animator ballAnimator;
@@ -45,11 +50,40 @@ public class ManagerStarterA : MonoBehaviour
     {
         ballAnimator.SetBool("isRolling", true);
         startedRolling = true;
+        BallSideController.playerIsInControl = true;
+
+        upArrowAnimator.SetBool("hasServed", true);
 
         LeanTween.moveLocalZ(ghostObject, -5f, ghostTimerStop).setEase(ghostCurve); // THIS WILL SLOW DOWN GLOBAL SPEED.
 
         yield return new WaitForSeconds(ghostTimerStop);
 
         forgetAboutThis = true;
+        startedRolling = false;
+
+        yield return new WaitForSeconds(ghostTimerStop);
+
+        upArrowGo.SetActive(false);
+        sideArrowGo.SetActive(true);
+
     }
+
+    public void HideSideArrowHinter()
+    {
+        StartCoroutine(HideSideArrowHinterCoroutine());
+
+    }
+
+    IEnumerator HideSideArrowHinterCoroutine()
+    {
+       
+        sideArrowAnimator.SetBool("hasServed", true);
+
+        yield return new WaitForSeconds(ghostTimerStop);
+
+        sideArrowGo.SetActive(false);
+
+    }
+
+
 }

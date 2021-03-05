@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
 {
     public static bool playerIsInControl;
+    public bool playerisincontrolCopy;
 
     public bool isUsingPc;
 
@@ -36,6 +37,9 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
 
     public void Update()
     {
+        //TEST
+        playerisincontrolCopy = playerIsInControl;
+
         AssignLerper();
 
         if (playerIsInControl == true)
