@@ -15,6 +15,7 @@ public class ManagerSceneTransitions : MonoBehaviour
     public string nextLvlName;
    
     public float swipeTime;
+    public float timeBeforeNextScene = 0.5f;
     public AnimationCurve curve;
 
     public void Start()
@@ -60,7 +61,7 @@ public class ManagerSceneTransitions : MonoBehaviour
     {
         LeanTween.moveLocalY(nextLvl, 0f, swipeTime).setEase(curve);
 
-        yield return new WaitForSeconds(swipeTime + 0.5f);
+        yield return new WaitForSeconds(swipeTime + (timeBeforeNextScene));
 
         SceneManager.LoadScene(nextLvlName, LoadSceneMode.Single);
 

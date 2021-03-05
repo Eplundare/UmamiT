@@ -24,7 +24,7 @@ public class Flicker3d : MonoBehaviour
         objMaterial = ren.material;
         originalC = ren.material.color;
         whiteC = new Color32(255, 255, 215, 255);
-        hitC = new Color32(63, 205, 112, 255);
+        hitC = new Color32(33, 175, 82, 255);
 
 
     }

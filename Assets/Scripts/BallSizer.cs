@@ -32,7 +32,7 @@ public class BallSizer : MonoBehaviour
 
     public void Start()
     {
-        currentSize = 0.6f;
+        currentSize = ballScale.localScale.x;
         scaleTarget = new Vector3(currentSize, currentSize, currentSize);
         ballScale.transform.localScale = scaleTarget;
 
