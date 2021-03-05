@@ -47,7 +47,7 @@ public class ManagerSceneTransitions : MonoBehaviour
 
         yield return new WaitForSeconds(swipeTime + 0.5f);
 
-        SceneManager.LoadScene(currentLvlName);
+        SceneManager.LoadScene(currentLvlName, LoadSceneMode.Single);
     }
 
     public void NextLvl()
@@ -62,7 +62,7 @@ public class ManagerSceneTransitions : MonoBehaviour
 
         yield return new WaitForSeconds(swipeTime + 0.5f);
 
-        SceneManager.LoadScene(nextLvlName);
+        SceneManager.LoadScene(nextLvlName, LoadSceneMode.Single);
 
     }
 }

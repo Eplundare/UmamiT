@@ -40,9 +40,12 @@ public class UiStartSwiper : MonoBehaviour
     {
         LeanTween.moveLocalY(startParent, -screenOutY, (swipeTime/1.5f)).setEase(curve);
 
-        yield return new WaitForSeconds(swipeTime + 1f);
+        yield return new WaitForSeconds(swipeTime);
         startCanvas.enabled = false;
-        SceneManager.LoadScene(firstLvlName);
+
+        yield return new WaitForSeconds(1f);
+
+        SceneManager.LoadScene(firstLvlName, LoadSceneMode.Single);
 
     }
 }

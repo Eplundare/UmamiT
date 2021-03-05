@@ -31,22 +31,24 @@ public class ManagerGameOver : MonoBehaviour
     public GameObject pauseButton;
     public GameObject resumeButton;
 
-    //public void Start()
-    //{
-    //    originalGSpeed = gValues.whatSpeed;
-    //    LeanTween.moveLocalZ(ghostObject, originalGSpeed, 0f);
-    //}
+    public void Start()
+    {
+        isGameOver = false;
 
-    //public void Update()
-    //{
-    //    ghostLerper = ghostObjTrans.localPosition.z;
-    //    if (isGameOver == true)
-    //    {
-    //        gValues.whatSpeed = ghostLerper;
+        originalGSpeed = -5f;
+        LeanTween.moveLocalZ(ghostObject, originalGSpeed, 0f);
+    }
 
-    //    }
+    public void Update()
+    {
+        ghostLerper = ghostObjTrans.localPosition.z;
+        if (isGameOver == true)
+        {
+            gValues.whatSpeed = ghostLerper;
 
-    //}
+        }
+
+    }
 
     public void WindowGameOver()
     {

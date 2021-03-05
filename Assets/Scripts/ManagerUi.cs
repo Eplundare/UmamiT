@@ -46,6 +46,6 @@ public class ManagerUi : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             managerStarterA.StartRolling();
         }
 
-        
+
     }
 }

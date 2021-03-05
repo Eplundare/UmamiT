@@ -29,17 +29,17 @@ public class Flicker3d : MonoBehaviour
 
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyDown("c"))
-        {
-            Flicker();
-        }
-        if (Input.GetKeyDown("s"))
-        {
-            FlickerSad();
-        }
-    }
+    //public void Update()
+    //{
+    //    if (Input.GetKeyDown("c"))
+    //    {
+    //        Flicker();
+    //    }
+    //    if (Input.GetKeyDown("s"))
+    //    {
+    //        FlickerSad();
+    //    }
+    //}
 
     public void Flicker()
     {

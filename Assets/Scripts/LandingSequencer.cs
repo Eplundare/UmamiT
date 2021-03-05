@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LandingSequencer : MonoBehaviour
 {
+    public bool initiateLandingSequence;
+
     public GameObject landingParent;
     public GameObject cloudsParent;
 
@@ -44,12 +46,16 @@ public class LandingSequencer : MonoBehaviour
 
     public void Update()
     {
-        ghostLerper = ghostObjTrans.localPosition.z;
-        if (hasLanded == true)
-        {
-            gValues.whatSpeed = ghostLerper;
+        //if (initiateLandingSequence == true)
+        //{
+            ghostLerper = ghostObjTrans.localPosition.z;
+            if (hasLanded == true)
+            {
+                gValues.whatSpeed = ghostLerper;
 
-        }
+            }
+        //}
+        
 
     }
 

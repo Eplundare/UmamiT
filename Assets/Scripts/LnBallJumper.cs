@@ -15,12 +15,12 @@ public class LnBallJumper : MonoBehaviour
     public AnimationCurve riseCurve;
     public AnimationCurve fallCurve;
 
-    public void Start()
+    public void Update()
     {
-        //if (Input.GetButtonDown("j"))
-        //{
-        //    SnomanJump();
-        //}
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            SnomanJump();
+        }
     }
 
     public void SnomanJump()

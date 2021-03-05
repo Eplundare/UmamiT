@@ -13,7 +13,7 @@ public class GlobalValues : MonoBehaviour
 
     public void Start()
     {
-        whatSpeed = -5f;
+        //whatSpeed = -5f;
         whatSpeed = 0f;
     }
 

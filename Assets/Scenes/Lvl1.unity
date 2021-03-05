@@ -11188,7 +11188,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &457889557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20344,6 +20344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497ace25a968a874ba5283ac7b849443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerisincontrolCopy: 0
   isUsingPc: 1
   lerper: 0
   ballPos: {fileID: 1314021821}
@@ -20353,6 +20354,8 @@ MonoBehaviour:
   posDcandy: {fileID: 1454519257}
   ballLimitA: {x: 0, y: 0, z: 0}
   ballLimitB: {x: 0, y: 0, z: 0}
+  isInNormalPath: 0
+  isInCandyPath: 0
 --- !u!114 &708880632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25536,7 +25539,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 45}
-  m_SizeDelta: {x: 650, y: 800}
+  m_SizeDelta: {x: 980.6, y: 889.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &916407612
 MonoBehaviour:
@@ -30805,7 +30808,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1019025227
 RectTransform:
   m_ObjectHideFlags: 0
@@ -43913,8 +43916,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -849}
-  m_SizeDelta: {x: 703.9, y: 402.4}
+  m_AnchoredPosition: {x: 0, y: -404}
+  m_SizeDelta: {x: 851.2, y: 1042.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627723821
 MonoBehaviour:
@@ -51749,6 +51752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70fd1b4b0de2a9468a34aedac374073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initiateLandingSequence: 0
   landingParent: {fileID: 5453912879274982195}
   cloudsParent: {fileID: 1734487833322341530}
   ballGo: {fileID: 825454809}

@@ -22,11 +22,15 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
     public Vector3 ballLimitA;
     public Vector3 ballLimitB;
 
+    public bool isInNormalPath;
+    public bool isInCandyPath;
     
 
     public void Start()
     {
         //playerIsInControl = true;
+        isInNormalPath = true;
+        isInCandyPath = false;
 
         lerper = 0.5f;
 
@@ -40,6 +44,17 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
         //TEST
         playerisincontrolCopy = playerIsInControl;
 
+        if (isInNormalPath == true)
+        {
+            ballLimitA = new Vector3(posA.position.x, ballPos.position.y, ballPos.position.z);
+            ballLimitB = new Vector3(posB.position.x, ballPos.position.y, ballPos.position.z);
+        }
+
+        else if (isInCandyPath == true)
+        {
+            ballLimitA = new Vector3(posCcandy.position.x, ballPos.position.y, ballPos.position.z);
+            ballLimitB = new Vector3(posDcandy.position.x, ballPos.position.y, ballPos.position.z);
+        }
         AssignLerper();
 
         if (playerIsInControl == true)
@@ -55,8 +70,11 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
     {
         lerper = 0.5f;
 
-        ballLimitA = new Vector3(posCcandy.position.x, ballPos.position.y, ballPos.position.z);
-        ballLimitB = new Vector3(posDcandy.position.x, ballPos.position.y, ballPos.position.z);
+        isInNormalPath = false;
+        isInCandyPath = true;
+
+        //ballLimitA = new Vector3(posCcandy.position.x, ballPos.position.y, ballPos.position.z);
+        //ballLimitB = new Vector3(posDcandy.position.x, ballPos.position.y, ballPos.position.z);
 
         playerIsInControl = true;
 

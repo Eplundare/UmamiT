@@ -17,50 +17,50 @@ public class BallRockBumper : MonoBehaviour
         normalSpeed = gValues.whatSpeed;
     }
 
-    public void Update()
-    {
-        if (Input.GetKeyUp(KeyCode.B))
-        {
-            Bumper();
-        }
-    }
+    //public void Update()
+    //{
+    //    if (Input.GetKeyUp(KeyCode.B))
+    //    {
+    //        Bumper();
+    //    }
+    //}
 
-    public void Bumper()
-    {
-        StartCoroutine(BumperCoroutine());
-    }
+    //public void Bumper()
+    //{
+    //    StartCoroutine(BumperCoroutine());
+    //}
 
-    IEnumerator BumperCoroutine()
-    {
-        currentLerpTime = 0f;
+    //IEnumerator BumperCoroutine()
+    //{
+    //    currentLerpTime = 0f;
 
-        //increment timer once per frame
-        currentLerpTime += Time.deltaTime;
-        if (currentLerpTime > lerpTime)
-        {
-            currentLerpTime = lerpTime;
-        }
+    //    //increment timer once per frame
+    //    currentLerpTime += Time.deltaTime;
+    //    if (currentLerpTime > lerpTime)
+    //    {
+    //        currentLerpTime = lerpTime;
+    //    }
 
-        ////lerp!
-        //float perc = currentLerpTime / lerpTime;
-        //perc = Mathf.Sin(perc * Mathf.PI * 0.5f);
-        //gValues.whatSpeed = Mathf.Lerp(backSpeed, stillSpeed, perc);
-        ////gValues.whatSpeed = Mathf.Sin(perc * Mathf.PI * 0.5f);
+    //    ////lerp!
+    //    //float perc = currentLerpTime / lerpTime;
+    //    //perc = Mathf.Sin(perc * Mathf.PI * 0.5f);
+    //    //gValues.whatSpeed = Mathf.Lerp(backSpeed, stillSpeed, perc);
+    //    ////gValues.whatSpeed = Mathf.Sin(perc * Mathf.PI * 0.5f);
 
-        yield return new WaitForSeconds(lerpTime);
+    //    yield return new WaitForSeconds(lerpTime);
 
-        //currentLerpTime = 0f;
+    //    //currentLerpTime = 0f;
 
-        ////increment timer once per frame
-        //currentLerpTime += Time.deltaTime;
-        //if (currentLerpTime > lerpTime)
-        //{
-        //    currentLerpTime = lerpTime;
-        //}
+    //    ////increment timer once per frame
+    //    //currentLerpTime += Time.deltaTime;
+    //    //if (currentLerpTime > lerpTime)
+    //    //{
+    //    //    currentLerpTime = lerpTime;
+    //    //}
 
-        ////lerp!
-        ////float perc = currentLerpTime / lerpTime;
-        //perc = Mathf.Sin(perc * Mathf.PI * 0.5f);
-        //gValues.whatSpeed = Mathf.Lerp(stillSpeed, normalSpeed, perc);
-    }
+    //    ////lerp!
+    //    ////float perc = currentLerpTime / lerpTime;
+    //    //perc = Mathf.Sin(perc * Mathf.PI * 0.5f);
+    //    //gValues.whatSpeed = Mathf.Lerp(stillSpeed, normalSpeed, perc);
+    //}
 }

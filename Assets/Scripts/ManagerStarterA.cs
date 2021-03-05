@@ -20,9 +20,13 @@ public class ManagerStarterA : MonoBehaviour
     public float ghostLerper;
     public float originalGSpeed;
 
+    private bool emptyBool;
+
     public void Start()
     {
+        forgetAboutThis = false;
         startedRolling = false;
+        BallSideController.playerIsInControl = false;
     }
 
     public void Update()
@@ -35,6 +39,11 @@ public class ManagerStarterA : MonoBehaviour
                 gValues.whatSpeed = ghostLerper;
 
             }
+        }
+
+        else if (forgetAboutThis == true)
+        {
+            emptyBool = true;
         }
         
 
@@ -54,7 +63,7 @@ public class ManagerStarterA : MonoBehaviour
 
         upArrowAnimator.SetBool("hasServed", true);
 
-        LeanTween.moveLocalZ(ghostObject, -5f, ghostTimerStop).setEase(ghostCurve); // THIS WILL SLOW DOWN GLOBAL SPEED.
+        LeanTween.moveLocalZ(ghostObject, -5f, ghostTimerStop).setEase(ghostCurve); // THIS WILL ACCELERATE GLOBAL SPEED.
 
         yield return new WaitForSeconds(ghostTimerStop);
 

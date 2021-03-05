@@ -5091,7 +5091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &162460032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20287,6 +20287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 497ace25a968a874ba5283ac7b849443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerisincontrolCopy: 0
   isUsingPc: 1
   lerper: 0
   ballPos: {fileID: 1314021821}
@@ -51734,6 +51735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e70fd1b4b0de2a9468a34aedac374073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initiateLandingSequence: 0
   landingParent: {fileID: 5453912879274982195}
   cloudsParent: {fileID: 1734487833322341530}
   ballGo: {fileID: 825454809}
