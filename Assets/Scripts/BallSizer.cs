@@ -30,6 +30,8 @@ public class BallSizer : MonoBehaviour
     public AnimationCurve animCurve;
     public AnimationCurve gameOverCurve;
 
+    public ParticleBurster particleManager;
+
     public void Start()
     {
         currentSize = ballScale.localScale.x;
@@ -46,28 +48,45 @@ public class BallSizer : MonoBehaviour
             BallShrink();
             flickerBall.FlickerSad();
             faceAnimator.SetBool("isWinning", false);
+
+            particleManager.burstSad();
         }
         else if (other.tag == "Grower")
         {
             BallGrow();
             scorer.SnowmanScorer();
             faceAnimator.SetBool("isWinning", true);
+
+            particleManager.burstPlus5();
+
         }
         else if (other.tag == "Berry")
         {
             scorer.StrawberryScorer();
+
+            particleManager.burstPlus1();
+
         }
         else if (other.tag == "LoCandy")
         {
             scorer.CandyLoScorer();
+
+            particleManager.burstPlus10();
+
         }
         else if (other.tag == "MedCandy")
         {
             scorer.CandyMedScorer();
+
+            particleManager.burstPlus20();
+
         }
         else if (other.tag == "HiCandy")
         {
             scorer.CandyHiScorer();
+
+            particleManager.burstPlus50();
+
         }
 
         else if (other.tag == "LandingSequencer")
@@ -79,6 +98,8 @@ public class BallSizer : MonoBehaviour
         else if (other.tag == "GoalCone")
         {
             landSequencer.LandingOnCone();
+
+            particleManager.burstConfetti();
         }
 
         else if (other.tag == "GoalSnow")

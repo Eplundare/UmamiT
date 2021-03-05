@@ -89,7 +89,7 @@ public class LandingSequencer : MonoBehaviour
 
         landCam3.SetActive(true);
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(1.5f);
 
         landCam4.SetActive(true);
         windowManager.WindowScore();

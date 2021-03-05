@@ -15,6 +15,14 @@ public class LnBallJumper : MonoBehaviour
     public AnimationCurve riseCurve;
     public AnimationCurve fallCurve;
 
+    public GameObject ballShadowMesh;
+    private Vector3 smallShadowVector;
+
+    public void Start()
+    {
+        smallShadowVector = new Vector3(0.6f, 0.6f, 0.6f);
+    }
+
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.J))
@@ -39,7 +47,15 @@ public class LnBallJumper : MonoBehaviour
     IEnumerator SnomanJumpCoroutine()
     {
         isJumping = true;
+        
+        // ANIMATE BALL
         LeanTween.moveLocalY(ball, jumpHeight, snomanJumpTime).setEase(riseCurve).setLoopPingPong(1);
+
+        // ANIMATE BALL SHADOW
+        //LeanTween.moveLocalX(ballShadowMesh, 1.1f, snomanJumpTime).setEase(riseCurve).setLoopPingPong(1);
+        LeanTween.scale(ballShadowMesh, smallShadowVector, snomanJumpTime).setEase(riseCurve).setLoopPingPong(1);
+
+
         yield return new WaitForSeconds(snomanJumpTime * 2);
 
         isJumping = false;
