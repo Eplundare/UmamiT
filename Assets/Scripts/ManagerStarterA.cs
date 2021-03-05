@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ManagerStarterA : MonoBehaviour
 {
+    public ProgressBar pBar;
+
     public Animator upArrowAnimator;
     public GameObject upArrowGo;
     public Animator sideArrowAnimator;
@@ -57,6 +59,8 @@ public class ManagerStarterA : MonoBehaviour
 
     IEnumerator StartRollingCoroutine()
     {
+        pBar.ProgressStart();
+
         ballAnimator.SetBool("isRolling", true);
         startedRolling = true;
         BallSideController.playerIsInControl = true;

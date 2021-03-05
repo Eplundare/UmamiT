@@ -121,7 +121,7 @@ public class BallSideController : MonoBehaviour/*, IPointerDownHandler*/
                 {
                     if (Input.mousePosition.y < 1850)
                     {
-                        lerper = (Input.mousePosition.x / Screen.width);
+                        lerper = ((Input.mousePosition.x - 315f) / (Screen.width - 630f));
                     }
 
                     //Debug.Log("Click Position : " + Input.mousePosition);
