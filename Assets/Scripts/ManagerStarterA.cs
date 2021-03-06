@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ManagerStarterA : MonoBehaviour
 {
     public ProgressBar pBar;
+
+    public Image hinterUp;
 
     public Animator upArrowAnimator;
     public GameObject upArrowGo;
@@ -60,6 +63,8 @@ public class ManagerStarterA : MonoBehaviour
     IEnumerator StartRollingCoroutine()
     {
         pBar.ProgressStart();
+
+        hinterUp.enabled = false;
 
         ballAnimator.SetBool("isRolling", true);
         startedRolling = true;
